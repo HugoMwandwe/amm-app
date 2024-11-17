@@ -1,0 +1,48 @@
+/* Light Theme (Default) */
+:root {
+    --primary-color: #1a4d7c;
+    --secondary-color: #2980b9;
+    --accent-color: #f39c12;
+    --background: #ffffff;
+    --surface: #f4f4f4;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #dddddd;
+    --shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #2980b9;
+    --secondary-color: #3498db;
+    --accent-color: #f1c40f;
+    --background: #1a1a1a;
+    --surface: #2c2c2c;
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --border-color: #404040;
+    --shadow: 0 2px 15px rgba(0,0,0,0.3);
+}
+
+/* Theme Transition */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+} 

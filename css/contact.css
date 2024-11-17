@@ -1,0 +1,225 @@
+/* Contact Page Styles */
+
+/* Hero Section */
+.page-hero {
+    background: linear-gradient(rgba(26, 77, 124, 0.9), rgba(26, 77, 124, 0.9)), url('../images/contact/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.page-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Contact Info Section */
+.contact-info {
+    padding: 4rem 0;
+    background: var(--white);
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-bg);
+    border-radius: 15px;
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow);
+}
+
+.info-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 1.5rem;
+    background: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.info-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 5rem 0;
+    background: var(--light-bg);
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 3rem;
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(26, 77, 124, 0.1);
+}
+
+.btn-submit {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Map Section */
+.map-section {
+    padding: 0;
+    margin-top: 4rem;
+}
+
+.map-container {
+    width: 100%;
+    height: 450px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-spacer {
+        height: 70px;
+    }
+
+    .page-hero {
+        padding: 4rem 0;
+    }
+
+    .page-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+}
+
+/* Header Spacer */
+.header-spacer {
+    height: 80px;
+}
+
+/* Footer specific adjustments for contact page */
+.footer {
+    margin-top: 4rem; /* Add space between contact form and footer */
+}
+
+.contact-info a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--white);
+}
+
+/* Enhance footer responsiveness on contact page */
+@media screen and (max-width: 768px) {
+    .footer {
+        margin-top: 3rem;
+    }
+    
+    .contact-info li {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+} 
